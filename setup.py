@@ -5,12 +5,6 @@
 
 from setuptools import setup, find_packages
 
-with open("README.md") as readme_file:
-    readme = readme_file.read()
-
-with open("HISTORY.rst") as history_file:
-    history = history_file.read()
-
 requirements = [
     "wradlib>=1.2.1",
     "netCDF4",
@@ -40,7 +34,7 @@ setup(
     description="Python package to parser RADOLAN binary data files to NetCDF",
     install_requires=requirements,
     license="BSD license",
-    long_description=readme + "\n\n" + history,
+    long_description="Python package to parser RADOLAN binary data files to NetCDF",
     include_package_data=True,
     keywords="radolan_to_netcdf",
     name="radolan_to_netcdf",
